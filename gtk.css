@@ -1,0 +1,201 @@
+window.xfce4-panel widget > box > button > image{
+   padding: 0.2em 0.16em;  -gtk-icon-transform: scale(0.95);
+}
+
+#xfce4-notification-plugin image {
+	-gtk-icon-transform: scale(0.65) translateY(3px);
+}
+#pulseaudio-button image {
+	-gtk-icon-transform: scale(0.85);
+}
+#xfce4-power-manager-plugin image {
+	-gtk-icon-transform: scale(0.65);
+}
+
+VteTerminal, vte-terminal {
+    padding: 13px;
+}
+
+/*
+ WHISKERS MENU
+*/
+
+window#whiskermenu-window  box widget {color: transparent;}
+
+#whiskermenu-window  * {
+    border: 0px #ccc solid;
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
+}
+
+window#whiskermenu-window  box {
+    padding: 3px;
+}
+
+#whiskermenu-window {
+    background-color: rgba(59,66,82,0.5);
+    color: transparent;
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px;
+}
+
+#whiskermenu-window  scrollbar {
+    background: transparent;
+}
+
+#whiskermenu-window  entry {
+    background-color: rgba(59,66,82,0.5);
+    color: #ccc;
+    border: 1px rgba(255,255,255,0.35) solid;
+    padding: 5px;
+}
+
+
+#whiskermenu-window  button {
+    background-color: rgba(59,66,82,0.5);
+    color: #ccc;
+    margin:2px;
+    margin-right: 4px;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: normal;
+}
+
+
+#whiskermenu-window  treeview {
+    background-color: rgba(59,66,82,0.5);
+    color: #ccc;
+    border-radius: 0px 0px 0px 0px;
+    margin:2px;
+    margin-right: 1px;
+    margin-left: 4px;
+    padding: 3px;
+    font-weight: normal;
+}
+
+
+#whiskermenu-window  button:focus,
+#whiskermenu-window  button:hover,
+#whiskermenu-window  button:active,
+#whiskermenu-window  button:selected,
+#whiskermenu-window  treeview:selected,
+#whiskermenu-window  treeview:hover,
+#whiskermenu-window  treeview:active,
+#whiskermenu-window  treeview:focus
+{
+    background-color: #6A8685;
+    color: #000000;
+    transition: 200ms;
+    border: 1px rgba(255,255,255,0.35) solid;
+    border-radius: 10px;
+}
+
+#whiskermenu-window  button:active {
+background: #6A8685;
+}
+
+#whiskermenu-window  treeview:focus {
+background: rgba(255,255,255,0.5);
+border: 1px rgba(255,255,255,0.35) solid;
+}
+
+#whiskermenu-window  iconview{
+background: transparent;
+border-radius: 10px;
+}
+
+#whiskermenu-window  iconview:hover{
+background: rgba(255,255,255,0.25);
+border: 1px rgba(255,255,255,0.35) solid;
+}
+
+#whiskermenu-window  iconview{
+background: rgba(255,255,255,0.25);
+border: 1px rgba(255,255,255,0.35) solid;
+border-radius: 10px;
+}
+
+#whiskermenu-window  iconview:hover{
+background: rgba(255,255,255,0.25);
+border: 10px rgba(255,255,255,0.35) solid;
+}
+
+#whiskermenu-window  .frame:first-child {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+}
+
+#whiskermenu-window  iconview {
+color: #6A8685;
+}
+
+/*
+############################XFCE4-PANEL
+*/
+
+.xfce4-panel {
+    color: #ccc;
+    border: 0px #6A8685 solid;
+    border-radius: 0px;
+	margin-bottom: 2px;
+	padding: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+    background: rgba(59,66,82,0.5);
+    border-top: 1px rgba(59,66,82,0.2) solid;
+    border-bottom: 1px rgba(59,66,82,0.2) solid;
+    font-weight: normal;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    margin-bottom: 2px;
+}
+
+.xfce4-panel.background button {
+    min-height: 22px;
+    min-width: 22px;
+    box-shadow: none;
+    background-color: rgba(59,66,82,0.8);
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+.xfce4-panel .windowwrapper {
+    border: 0px #6A8685 solid;
+    box-shadow: none;
+    min-height: 20px;
+    min-width: 20px;
+    border-radius: 0px;
+    border:1px;
+}
+
+.xfce4-panel .background .tasklist button {
+    border: 1px #6A8685 solid;
+    font-size: 8px;
+    background-color: rgba(59,66,82,0.8);
+}
+
+.xfce4-panel .tasklist .toggle {
+    background-color: #6A8685;
+    color: #000000;
+    border-radius: 3px;
+    margin: 4px;
+    padding: 0px;
+    border-top: 0px rgba(163,255,220,0.2) solid;
+    transition: 200ms;
+}
+
+.xfce4-panel .tasklist .toggle:hover,
+.xfce4-panel .tasklist .toggle:active {
+    border: 1px #6A8685 solid;
+    background-color: #6A8685;
+    border-top: 0px rgba(163,255,220,0.8) solid;
+    border-radius: 3px;
+}
+
+.xfce4-panel .tasklist .toggle:focus,
+.xfce4-panel .tasklist .toggle:checked {
+    border: 1px #6A8685 solid;
+    background-color: #6A8685;
+    border-top: 0px rgba(59,66,82,0.9) solid;
+    border-radius: 3px;
+}
